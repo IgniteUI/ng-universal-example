@@ -328,8 +328,13 @@
 
 <div class="content" role="main">
 
+  <!-- -->
+  <igx-calendar></igx-calendar>
+  <br />
+  <igx-combo [data]="localData" displayKey="ProductName" valueKey="ProductID"></igx-combo>
+  <br />
   <igx-grid [data]="localData" [autoGenerate]="true" primaryKey="ProductID">
-  </igx-grid>
+  </igx-grid> 
   <!-- Highlight Card -->
   <br />
   <div class="card highlight-card card-small">

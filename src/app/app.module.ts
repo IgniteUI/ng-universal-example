@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { IgxGridModule } from 'igniteui-angular';
+import { IgxGridModule, IgxCalendarModule, IgxComboModule } from 'igniteui-angular';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,9 @@ import { IgxGridModule } from 'igniteui-angular';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
-    IgxGridModule
+    IgxGridModule,
+    IgxCalendarModule,
+    IgxComboModule
   ],
   providers: [],
   bootstrap: [AppComponent]
