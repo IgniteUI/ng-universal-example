@@ -1,27 +1,21 @@
-# NgUniversalExample
+# Angular Universal Example
 
+This repository demonstrate how to start using Ignite UI for Angular with Server-side rendering. 
+
+# Build
+
+Perform:
+1. `npm install`
+2. `npm run build:ssr && npm run serve:ssr`
+3. Open `localhost:4000` in your browser
+
+# Angular Universal
+
+Most of the Angular applications run in a client's browser, but if you want to generate the full HTML for a page on the server, and avoid additional round-trips for data fetching - [Angular Universal](https://angular.io/guide/universal) come in handy. It renders a client-side page to HTML on the server that is later bootstrapped on the client. Okay, but how it works?
+
+# How it works?
+
+With Angular Universal, you will serve a static version of your apps' landing page, while at the same time the full Angular application loads in the background. The landing pages will be pure HTML and will be displayed even if the JavaScript is disabled, keep in mind that [handling browser events](ssr-rendering.md#things-to-note) won't be possible. More about Server Rendering you can find [here](https://developers.google.com/web/updates/2019/02/rendering-on-the-web).
+
+# Angular CLI
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
